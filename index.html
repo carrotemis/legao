@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="gbk">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="ossweb-img/css/reset.css">
+    <link rel="stylesheet" href="ossweb-img/css/index.css">
+    <style>
+        /* title样式，为头部设置42px内边距，防止加载title后页面跳动 */
+        body{padding-top: 42px;}
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="kv">
+            <div class="wrap">
+                    <div class="login" >
+                            <!-- 登录前状态 S -->
+                            <div ams-login="unloggedin-area">
+                                亲爱的冒险家，请<a ams-login="btn-login" style="color: #509dff;"  href="javascript:;" onclick="TGDialogS('login'),PTTSendClick('btn','login','登录');">【登录】</a>
+                            </div>
+                           
+                            <div ams-login="loggedin-area" style="display: none;">
+                                亲爱的冒险家，<span ams-login="user-name"></span>
+                                <!-- 用户QQ账号 or 微信昵称 E -->
+                                <!-- 注销 S -->
+                                <a ams-login="btn-logout" href="javascript:;" onclick="PTTSendClick('btn','loginout','注销');">【注销】</a>
+                                <!-- 注销 E -->
+                            </div>
+                            <!-- 登录后状态 E -->
+                        </div>
+                <div class="logo"></div>
+                <div class="white-logo"></div>
+                <div class="pic-logo"></div>
+                <div class="base-btn ">
+                    <a href="//lgwx.qq.com/index_p.shtml" target="_blank" onclick="PTTSendClick('btn','tobase','进入官网');" class="first fl ">进入官网</a>
+                    <a href="//bbs.lgwx.qq.com" target="_blank" onclick="PTTSendClick('btn','tobbs','玩家营地');" class="second fl ">玩家营地</a>
+                </div>
+            </div>
+            <div class="download-part clear">
+                    <div class="download-qr fl">
+                        <i class="line hd"></i>
+                        <img src="ossweb-img/download.png" width="136" height="136" alt="下载二维码" class="">
+                        <p class="qr-desc">扫码下载游戏</p>
+                    </div> 
+                    <ul class="download-btn fl">
+                        <li class="ios"><a href="//lgwx.qq.com/d/index.html?device=ios" target="_blank" title="iOS下载" onclick="PTTSendClick('btn','iosDownload','ios下载');" class="clear">
+                            <i class="kv-icon hd"></i><span class="fr">iOS下载</span>
+                        </a></li>
+                        <li class="android"><a href="//lgwx.qq.com/d/index.html?device=android" target="_blank" title="安卓下载" onclick="PTTSendClick('btn','androidDownload','安卓下载');" class="clear">
+                            <i class="kv-icon hd"></i><span class="fr">安卓下载</span>
+                        </a></li>
+                        
+                        <li class="download-gift"><a href="javascript:;" target="_blank" title="下载礼包" onclick="PTTSendClick('btn','giftDownload','下载礼包');" class="clear">
+                            <i class="kv-icon hd"></i><span class="fr">下载礼包</span>
+                        </a></li>
+                    </ul> 
+                </div>
+        </div>
+        <!-- 第一部分 -->
+        <div class="s1">
+                <div class="wrap p-r">
+                        <p>玩家在游戏中每摆放一个方块即可为我们的“世界之巅”建筑贡献一份力，全服累计摆放方块数达到不同阶段即可解锁相应奖励！</p>
+                <h2></h2>
+                <div class="house p-ab">
+                        <div class="yellow-radius"></div>
+
+
+                </div>
+                <!-- 上部分 -->
+                <div class="top clear">
+                    <h3 class="fl"></h3>
+                    <div class="s1-t-t">                      
+                            <ul class="clear">
+                                <li class="fl">
+                                    <img src="ossweb-img/legao-s1-01.png" alt="" width="182" height="233">
+                                    <p>参与奖励</p>
+                                    <a href="javascript:" class="li1 noton">已领取</a>
+                                </li>
+                                <li class="fl">
+                                        <img src="ossweb-img/legao-s1-02.png" alt="" width="182" height="233">
+                                        <p>10w助力奖励</p>
+                                    <a href="javascript:" class=" li2 on">领取</a>
+                                </li>
+                                <li class="fl">
+                                        <img src="ossweb-img/legao-s1-03.png" alt="" width="182" height="233">
+                                        <p>50w助力奖励</p>
+                                        <a href="javascript:" class=" li2 noton">未解锁</a>
+                                    </li>
+                                <li class="fl"> 
+                                     <img src="ossweb-img/legao-s1-04.png" alt="" width="182" height="233">
+                                     <p>100w助力奖励</p>
+                                     <a href="javascript:" class=" li2 noton">未解锁</a>                   
+                                </li>                   
+                            </ul>
+                        </div>
+                    <div class="s1-t-b">
+                            <ul class="clear">
+                                <li class="fl" >
+                                        <img src="ossweb-img/legao-s1-05.png" alt="" width="182" height="233">
+                                        <p>150w助力奖励</p>
+                                        <a href="javascript:" class="li1 noton">未解锁</a>                                                                     
+                                <li class="fl" >
+                                        <img src="ossweb-img/huicheng.png" alt="" width="182" height="233">
+                                        <p>200w助力奖励</p>
+                                        <a href="javascript:" class="li1 noton">已领取</a>
+                                    </li>
+                                <li class="fl" >
+                                        <img src="ossweb-img/legao-s1-07.png" alt="" width="182" height="233">
+                                        <p>300w助力奖励</p>
+                                        <a href="javascript:" class="li1 noton">已领取</a>
+                                    </li>
+                            </ul>
+                    </div>
+                </div>
+                <!-- 下部分 -->
+                <div class="bottom">
+                    <h2></h2>
+                    <div class="bg">
+                            <div class="bg-1">
+                                    <a href="javascript:" class="on">领取</a>
+                                    <p>已领取<span class="span1">2</span class='span2'>/<span>5</span></p>
+                            </div>   
+                            <div class="right"></div>
+                            <div class="bg-2">
+                                    <a href="javascript:" onclick="TGDialogS('invite'),PTTSendClick('btn','invitateFriends01','邀请好友');"  class="on">领取</a>
+                                    <!-- <p>已领取<span class="span1">2</span class='span2'>/<span>5</span></p> -->
+                                    <p style="font-size: 14px ;width: 127px;">*领取所以阶段奖励 并成功邀请三位好友</p>
+                                    <!-- <p style="font-size: 12px">并成功邀请三位好友</p> -->
+                            </div>
+                        </div>
+                        <div class="person"></div>
+                                        <div class="btn-area">
+                                            <a href="javascript:" onclick="TGDialogS('invite'),PTTSendClick('btn','invitateFriends01','邀请好友');"  ></a>
+                                            <div>你已经成功邀请位<span style="color: #f97d32">2</span>好友</div>
+                                        </div>
+                </div>
+                </div>
+        </div>
+        <!-- 第二部分 -->
+        <div class="s2">
+            <h2></h2>
+            <div class="top">
+                <div class="wrap">
+                        <h3></h3>
+                        <div class="map">
+                            <div class="flyperson"></div>
+                            <div class="road"></div>
+                        </div>
+                        <div class="quanyuan">
+                            <p>全员总纪录<span style="color: #ffde00">&nbsp;&nbsp;&nbsp;2000</span></p>
+                        </div>
+                    </div>
+                <div class="bg">
+                    <ul class="clear">
+                        <li class="fl">
+                                <h4>北极</h4>
+                                <h5>装饰物礼包</h5>
+                                <img src="ossweb-img/gold.png" alt="">
+                                <a href="javascript:" class="li3 on  ">领取</a>
+                                <p class="p1 ">*参与奖励</p>
+                        </li>
+                        <li class="fl">
+                                <h4>古希腊</h4>
+                                <h5>开心烟花x5</h5>
+                                <p>*全服总纪录达到2000</p>
+                                <a href="javascript:" class="li3 on  ">领取</a>
+                               
+								 <img src="ossweb-img/gold.png" alt="">
+                        </li>
+                        <li class="fl">
+                                <h4>古埃及</h4>
+                                <h5>传送卷轴x2</h5>
+                                <img src="ossweb-img/gold.png" alt="">
+                                <a href="javascript:" class="li3 grey  ">未解锁</a>
+                                <p class="grey1">*全服总纪录达到2000</p>
+                        </li>
+                        <li class="fl">
+                                <h4>古巴比伦</h4>
+                                <h5>蓄力稿x1</h5>
+                                <img src="ossweb-img/gold.png" alt="">
+                                <a href="javascript:" class="li3 grey  ">未解锁</a>
+                                <p class="grey1">*全服总纪录达到10000</p>
+                        </li>
+                        <li class="fl">
+                                <h4>古印度</h4>
+                                <h5>爆炸球x10</h5>
+                                <img src="ossweb-img/gold.png" alt="">
+                                <p class="grey1">*全服总纪录达到50000</p>
+                                <a href="javascript:" class="li4 grey ">已领取</a>
+                        </li>
+                        <li class="fl">
+                                <h4>中国</h4>
+                                <h5>传送球x10</h5>
+                                <img src="ossweb-img/gold.png" alt="">
+                                <p class="grey1">*全服总纪录达到100000</p>
+                                <a href="javascript:" class="li4 grey ">已领取</a>
+                        </li>
+                        <li class="fl">
+                                <h4>南极</h4>
+                                <h5>地狱马x1</h5>
+                                <img src="ossweb-img/gold.png" alt="">
+                                <p class="grey1">*全服总纪录达到200000</p>
+                                <a href="javascript:" class="li4 grey ">已领取</a>
+                        </li>
+                        <li class="fl last">
+                                <h5>探险家小人仔皮肤</h5>
+                                <img src="ossweb-img/gold.png" alt="">
+                                <p class="grey1">领取所有阶段奖励</p>
+                                <a href="javascript:" class="li4 on " style="color: #cc6000">点击抽奖</a>
+                        </li>
+                    </ul>
+             </div>    
+        </div>
+        <div class="bottom">
+            <div class="wrap">
+                <h2>邀请好友有奖</h2>
+                <div class="bg">
+                        <ul class="clear">
+                            <li class="fl">
+                                <a href="javascript:"  onclick="TGDialogS('invite'),PTTSendClick('btn','invitateFriends01','好友助力');"></a>
+                            </li>
+                            <li class="fl">
+                                <a href="javascript:" onclick="TGDialogS('invite'),PTTSendClick('btn','invitateFriends01','好友助力');"></a>
+                            </li>
+                            <li class="fl">
+                                <a href="javascript:" onclick="TGDialogS('invite'),PTTSendClick('btn','invitateFriends01','好友助力');"></a>
+                            </li>
+                            <li class="fl">
+                                <a href="javascript:" onclick="TGDialogS('invite'),PTTSendClick('btn','invitateFriends01','好友助力');"></a>
+                            </li>
+                            <li class="fl">
+                                <a href="javascript:" onclick="TGDialogS('invite'),PTTSendClick('btn','invitateFriends01','好友助力');"></a>
+                            </li>
+                        </ul>
+                        <div class="hlep">
+                            <a href="javascript:" onclick="TGDialogS('invite'),PTTSendClick('btn','invitateFriends01','好友助力');">好友助力</a>
+                        </div>
+                        <p class="first">已有<span >&nbsp; 2 &nbsp;</span>位好友参与助力</p>
+                        <div class="battery">
+
+                            <div class="clear   electricity">
+                                <div class="fl"></div>
+                                <div class="fl"></div>
+                                <div class="fl"></div>
+                                <div class="fl"></div>
+                                <div class="fl"></div>
+                               
+                            </div>
+                        </div>
+                        <p class="second">好友已助力<span>&nbsp;9&nbsp;</span>个燃料电池  &nbsp;&nbsp;当前燃料电池拥有数<span>&nbsp;30&nbsp;</span>个</p>
+                </div>
+            </div>
+        </div>
+        <div class="finally">
+            <div class="wrap">
+                <h2 >金币兑换</h2>
+                <p class="p1">金币可用于游戏内购买道具</p>
+                <div class="f-bg ">
+                        <div class="c clear">
+                                <div class="c1 fl small">
+                                    <div class="t1">所需燃料电池X20个</div>
+                                    <div class="pic"></div>
+                                    <div class="gold">金币X100</div>
+
+                                </div>
+                                <div class="c1 fl small">
+                                        <div class="t1">所需燃料电池X50个</div>
+                                        <div class="pic"></div>
+                                        <div class="gold">金币X200</div>    
+                                </div>
+                                <div class="c1 fl small">
+                                        <div class="t1">所需燃料电池X100个</div>
+                                        <div class="pic"></div>
+                                        <div class="gold">金币X500</div>    
+                                </div>
+                                <div class="c1 fl small">
+                                        <div class="t1">所需燃料电池X200个</div>
+                                        <div class="pic"></div>
+                                        <div class="gold">金币X1000</div>    
+                                </div>
+                        </div>
+                <div class="f-last"><a href="javascript:"onclick="TGDialogS('duihuan'),PTTSendClick('btn','invitateFriends01','好友助力');">兑换金币</a></div>
+                </div>
+                <div class="bottom">
+                    <h3>活动规则</h3>
+                    <div class="p-c">
+                        <p>1.活动时间：即日起至不删档测试开启当天0点截止。</p>
+                        <p>2.活动期间，玩家完成预约即可获得预约礼包，预约总量到达规定数量时，所有预约玩家都可获得对应累计奖励。</p>
+                        <p>3.活动期间，玩家成功预约可获得5个乐高?颗粒，玩家每成功邀请1位好友，可获得2个乐高?颗粒，共可获得25颗乐高?颗粒。达成指定邀请好友数量时，可</p>
+                        <p>的邀请礼包。</p>
+                        <p>4.活动期间，玩家成功预约可获得一次抽奖机会，每成功邀请一位好友预约即可额外获得一次抽奖机会，单个账号每日仅限抽5次，活动期间抽奖次数限50次。</p>
+                        <p>5.礼包领取请关注官网公告信息，实物礼品将于活动结束后30个工作日内进行寄送，逾期未填写与误填收件信息，视为放弃奖励资格处理。</p>
+                        <p>6.如使用外挂、作弊器以及其他不正当的方式参与本次活动，官方将由有权取消用户参与资格、获奖资格。</p>
+                    </div>
+                    <div class="b1 clear">
+                        <div class="b11 bb1  fl">
+                            <a href="javascript:">
+                            <p>微信公众号</p>
+                        </a>
+                        </div>
+                        <div class="b11 bb2 fl">
+                            <a href="javacript:">
+                            <p>官方微博</p>
+                        </a>
+                        </div>
+                        <div class="b11 bb3  fl">
+                            <a href="javascript:">
+                            <p>兴趣部落</p>
+                        </a>
+                        </div>
+                        <div class="b11 bb4 fl">
+                            <a href="javascript:">
+                            <p>游戏圈子</p>
+                        </a>
+                        </div>
+
+                        <div class="b12 fl">
+                            <h5>官方qq群</h5>
+                            <div class="b12-c clear">
+                                <div class="fl">664206470（QQ1群</div>
+                                <div class="fl"> 664193895（QQ2群）</div>
+                                <div class="fl"> 321970119（QQ3群）</div>
+                                <div class="fl"> 291324472（QQ4群）</div>
+                                <div class="fl">  291277868（QQ5群）</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="gfooter" ams="AMS地址[必填，询问对应内部重构]" age="年龄[询问对应内部重构或者产品]" dark="1" ieg-logo="1">
+                <!-- <div class="foot_top"> any HTML code </div> -->
+                <a target="_blank" href="http://www.qq.com/" title="logo1" class="foot_left logo1">logo1</a>
+                <a target="_blank" href="http://www.qq.com/" title="logo2" class="foot_left logo2">logo2</a>
+                <!-- <p class="copyright_txt">COPYRIGHT &?Smilegate Entertainment. All rights reserved.</p>-->
+                <!-- <div  class="foot_bottom"> any HTML code </div> -->
+            </div>
+    </div>
+    <!-- 侧边栏 -->
+        <div class="right-nav">
+            <div class="left"></div>
+            <div class="erweima"></div>
+            <div class="dian list">世界之巅</div>
+            <div class="top"></div>
+            <div class="world on list" >环游世界</div>
+            <div class="yuyue"></div>
+            <div class="ios"></div>
+            <div class="android"></div>
+        </div>
+    <!-- 弹出层 Start-->
+    <!-- 登录 -->
+    <div class="dialog" id="login" style="display:none">
+        <div class="dia-con">
+            <a href="javascript:" class="qq"></a>
+            <a href="javascript:" class="weixing"></a>
+        </div>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+    </div>
+    <!-- 邀请 -->
+    <div class="dialog" id="invite" style="display:none">
+            <div class="dia-con">
+                    <textarea   class="copy-textarea">https://lgwx.qq.com/webplat/info/news_version3/37380/37381/37382/37384/m21482/list_1.shtml</textarea>
+                <div class="link"><span>页面地址：</span>
+                     <a style="color:#2a6abb;user-select: all"  href="javascript:;">https://lgwx.qq.com/cp/a20190123order/index_
+                        p.shtml</a></div>
+                <a href="javascript:copyUrl();"  class="btn"></a>
+            </div>
+            <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+        </div>
+    <!-- 兑换 -->
+    <div class="dialog" id="duihuan" style="display:none">
+            <div class="dia-con">
+                <div class="d1">兑换成功</div>
+                <div class="d2">金币X100</div>
+                <div class="d3">*游戏道具奖励将于7个工作日内发送到游戏邮箱</div>
+            </div>
+            <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+        </div>
+     <!-- 礼包领取已满 -->
+
+     <div class="dialog" id="gift1" style="display:none">
+            <div class="dia-con2">
+                <div class="d1">礼包领取已满</div>
+            </div>
+            <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+        </div>
+
+
+         <!-- 获取礼包 -->
+    <div class="dialog" id="getgift" style="display:none">
+        <div class="dia-con">
+            <div class="d1">恭喜你抽中礼包X1</div>
+           
+        </div>
+        <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+    </div>
+
+        <!-- 抽奖 -->
+
+        <div class="dialog" id="aware" style="display:none">
+                <div class="dia-con3">
+                    <div class="d1">恭喜你!!!抽中成功</div>
+                    <div class="d2">永久皮肤</div>
+                </div>
+                <a class="dia-close" href="javascript:showDialog.hide()" title="关闭"></a>
+            </div>
+
+    <!-- 弹出层 End-->
+        <script src="//game.gtimg.cn/images/js/2018foot/foot.js"></script>
+         <script src="//ossweb-img.qq.com/images/js/title.js"></script>
+         <script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script> 
+         <script src="ossweb-img/js/laxing.js"></script>
+         <!-- PC端milo -->
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script>
+
+function TGDialogS(e){
+            // 利用milo库引入dialog组件
+            need("biz.dialog",function(Dialog){
+                Dialog.show({
+                    id:e,
+                    bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+                    opacity:50 //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+                });
+            });
+        }
+        function closeDialog(){
+            // 利用milo库引入dialog组件
+            need("biz.dialog",function(Dialog){
+                Dialog.hide();
+            });
+        }
+</script>
+         <script>
+                    function copyUrl() {
+                            $(".copy-textarea").select();
+                            console.log($(".copy-textarea").select());
+                            alert("复制成功！")
+                            document.execCommand("copy");
+
+                            if (document.execCommand && document.execCommand("copy")) {
+                               
+                            }
+                        }
+             $(function(){
+                $('.s1 .bg-2>a').click(function(){
+                    $(this).removeClass('on').addClass('offon').text('已领取')
+                })
+
+                /*复制链接 S*/                      
+                $('.right-nav .left').click(function(){
+                    if($(this).parent().hasClass('off')){
+                    $(this).parent().removeClass('off')
+                    }else{
+                        $(this).parent().addClass('off')
+                    }
+                })
+                if( $('.s2 .bg ul>li>a').hasClass('on')){
+                $('.s2 .bg ul>li>a').next().css({color:"#438ae7"});
+            }
+            else{
+                $('.s2 .bg ul>li>a').next().css({color:"#"});
+
+            }
+
+         
+                $('.s1-t-t  li a').click(function(){
+                    if( $(this).hasClass('on')){
+                        $(this).removeClass('on').addClass('noton');
+                        $(this).text('已领取');
+                    }
+                });
+
+                $('.f-bg .c>div  ').click(function(){
+                   $(this).removeClass('small').addClass('big').siblings().removeClass('big').addClass('small');
+                })
+
+                var sum=2;
+                $('.s1 .bg .bg-1>a').click(function(){
+                   var index =  parseInt($(this).next().find('.span1').text());
+                 var sum = index+1;
+                //    console.log("adasdas"+sum)
+                TGDialogS('getgift');
+              $(this).next().find('.span1').text(sum);
+                   if(index==5){
+                    //    alert('领取满了');
+                       $(this).next().find('.span1').text('5');
+                       TGDialogS('gift1');
+                   }
+                });
+                // 侧边栏控制
+                $('.right-nav .list').click(function(){
+                    $(this).addClass('on').siblings().removeClass('on');
+                    var s = $('.s1 .top').offset().top;
+                    $(window).scrollTop(s);
+                    console.log(s)
+                })
+                $('.right-nav .world').click(function(){
+                    var s = $('.s2 .top').offset().top;
+                    $(window).scrollTop(s);
+                })
+           
+                $('.s2 .bg ul>li.last>a').click(function(){
+                    
+                    if($(this).hasClass('on')){
+                        TGDialogS('aware');
+                    }
+                    
+                    if($(this).hasClass('on')){
+                        $(this).removeClass('on').addClass('grey');
+                        $(this).next().css({color:"#b1b1b1"});
+                        $(this).text('已领取');
+                    }
+
+                   
+
+                })
+                             $('.s2 .bg ul>li>a').click(function(){
+                                    
+                                if($(this).hasClass('on')){
+                        $(this).removeClass('on').addClass('grey');
+                        $(this).next().css({color:"#b1b1b1"});
+                        $(this).text('已领取');
+                    }
+
+                                    
+                                  
+
+                                
+
+                                })
+
+
+                //侧边栏
+                $(window).scroll(function(){
+                    var v = $(window).scrollTop();
+                    if (v > 600) {
+                        $('.right-nav').addClass('active') 
+                    }
+                    else{
+                    $('.right-nav').removeClass('active')
+                    }
+                })           
+             })       
+             $('.right-nav .top').click(function(){
+                $(window).scrollTop(0);
+             })
+             $(window).scroll(function(){
+             var f = $(window).scrollTop();
+            var toplength1 =  $('.s1 ').offset().top;
+            var toplength2 =  $('.s2 ').offset().top;
+            var toplength3 =  $('.s2 .bottom').offset().top;
+                if(f>=(toplength2-200)&&f<toplength3){
+                    $('.right-nav').find('.world').addClass('on');
+                    $('.right-nav').find('.dian').removeClass('on');
+                }
+                else if (f>=(toplength1-200)&&f<toplength2){
+                    $('.right-nav').find('.dian').addClass('on');
+                    $('.right-nav').find('.world').removeClass('on');
+                }
+                else{
+                    $('.right-nav').find('.world').removeClass('on');
+                    $('.right-nav').find('.dian').removeClass('on');
+
+                }
+             }
+             )
+
+
+
+            //  $('.s2 .last>a').click(function(){
+            //      alert(1)
+            //      if(this.hasClass('on')){
+            //         TGDialogS('aware');
+            //      }
+            //  })
+         </script>
+        </body>
+</html>
